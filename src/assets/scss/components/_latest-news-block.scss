@@ -1,0 +1,110 @@
+.latest-news-block {
+    background: $grey;
+
+    &__main-heading {
+        @include headline ($black, $heading-size); 
+        margin-bottom: 0em !important; 
+
+        @include sm {
+            margin-bottom: 2em !important; 
+         } 
+
+
+        }
+
+
+    h3 {
+        color: $secondary-color;
+        margin-top: 15px;
+        font-weight: bold;  
+    }
+
+
+    hr {
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+        border: 0;
+        border-top: 3px solid rgb(159, 221, 193);
+        max-width: 75%;
+    }
+
+
+    .card {
+        position: relative;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        min-width: 0;
+        word-wrap: break-word;
+        background-color: transparent;
+        margin-bottom: 50px;
+        /* background-clip: border-box; */
+        /* border: 1px solid rgba(0,0,0,.125); */
+        /* border-radius: .25rem; */
+    }
+
+
+    .card .card-body {
+        padding: 18px 8px;
+    }
+
+    
+    .card .card-body .featured-card-title {
+        font-size: 1.5em;
+        margin-bottom: 7px;
+        color: $black;
+        font-weight: 800;
+        max-width: 60vh;
+    }
+
+    .card .card-body .card-title {
+        font-size: 1em;
+        margin-bottom: 17px;
+        color: $black;
+        font-weight: 600;
+    }
+
+
+    .card .card-body .card-meta {
+        font-size: .75rem;
+        margin-bottom: 5px;
+        color: $color-purple;
+        font-weight: 600;
+    }
+
+    .card .card-text {
+        margin-top: 1em;
+        line-height: 1.5;
+        font-weight: 600;
+    }
+
+
+
+    &__links {
+        list-style-type: none;
+        margin: 1em 0;
+        text-align: left;
+        text-decoration: underline;
+        font-weight: 600;
+        color: #e93a97;
+    }
+
+
+    &__link-title {
+        font-size: .75em;
+        text-align: left;
+        letter-spacing: .2px;
+        margin: 8px 0;
+        font-weight: 800;
+        margin: 1em 0 2em;
+    
+        @include sm {
+            font-size: 1em;
+        } 
+    }
+
+    
+
+
+}

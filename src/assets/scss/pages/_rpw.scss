@@ -1,0 +1,94 @@
+
+@import url(https://fonts.googleapis.com/css?family=Raleway:300,600,700);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,700i);
+
+#history .headline {
+color:#d14348;
+font-size: 2.5rem;
+}
+#history em{
+  color:#e37808;
+}
+
+  #history{
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    background-size: 30% auto;
+    min-height: 25vh;
+    background-color:  #cee8c4;
+    padding: 5rem 0;
+   border-bottom: solid 10px #00aab0;
+  }
+
+.text-register {
+color:  #6f8866;
+font-weight: 700;
+}
+
+#history .text-content{width:70%}
+
+.return {
+  color: #f26925;
+  margin: 0 auto;
+  float: left;
+  font-size: 1em;
+}
+
+  .blog-bottom-border {
+    border-bottom: 1px solid rgba(236,236,237,1);
+    margin: 0 0 10px 0;
+}
+
+#signup form {
+    /*background-color: #f3d350;*/
+    background-color: #cee8c4;
+    padding: 2rem 1.25rem;
+    box-shadow: 1px 3px 3px #cdbcbc;
+}
+
+#signup form .btn-primary {
+    color: #fff;
+    background-color: #092f55;
+    border-color: #191c1e;
+}
+
+#signup form .btn-primary:hover {
+    color: #fff;
+    background-color: #0069d9;
+    border-color: #0062cc;
+}
+
+
+.alert {
+    padding: 20px;
+    background-color: #f44336;
+    color: white;
+   display: none;
+}
+
+.closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.closebtn:hover {
+    color: black;
+}
+
+.super-header {
+    background-color: rgb(186, 222, 172);
+    padding: 1rem 0;
+}
+
+
+.super-header a {
+    color: rgb(9, 47, 86);
+    font-weight: 800;
+    text-transform: uppercase;
+}

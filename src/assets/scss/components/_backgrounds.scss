@@ -1,0 +1,17 @@
+/* create new custom classes from existing classes */
+.row-dark {
+    @extend .row;
+    background-color: $primary-color;
+    //color: #ffffff;
+}
+
+
+
+.bg-primary {
+    background-color: $primary-color !important;
+}
+
+
+.bg-dark {
+    background-color: #e0dee6 !important;
+}

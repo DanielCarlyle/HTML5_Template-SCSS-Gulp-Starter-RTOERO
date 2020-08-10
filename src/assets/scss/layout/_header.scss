@@ -1,0 +1,81 @@
+/*.header {
+    height: 85vh;
+    background-image: linear-gradient(
+        to right bottom,
+        rgba($color-primary-light, 0.8),
+        rgba($color-primary-dark, 0.8)),
+    url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/902426/hero--large.jpg);
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    z-index: -1;
+    
+
+    @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+        height: 95vh;
+    }
+
+    @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
+            only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
+            only screen and (min-width: 125em) {
+        background-image: linear-gradient(
+            to right bottom,
+            rgba($color-primary-light, 0.8),
+            rgba($color-primary-dark, 0.8)),
+        url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/902426/hero--large.jpg);
+    }
+
+    &__logo-box {
+        position: absolute;
+        top: 4rem;
+        left: 4rem;
+    }
+
+    &__logo {
+        height: 3.5rem;
+    }
+    
+    &__text-box {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+}
+*/
+
+@keyframes fadeInAlert {
+    from {
+      margin-top: -75px;
+      opacity: 0;
+    }
+    to {
+      margin-top: 0px;
+      opacity: 1;
+    }
+  }
+  
+
+#homepage-popup-alert-warning {
+    animation: fadeInAlert 1s ease-out .2s forwards;
+    background-color: $red;
+    height: 75px;
+    margin-top: -75px;
+    margin-bottom: 0;
+    opacity: 0;
+     
+     p {
+        color: #ffffff;
+
+        @include md {
+            font-size: 1.2rem;
+          }
+
+     }
+     
+  }
+
+  

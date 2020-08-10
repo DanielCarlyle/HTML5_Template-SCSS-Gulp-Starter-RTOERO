@@ -1,0 +1,16 @@
+.default-icon-cards {
+    h5 {
+        max-width: 72%;
+        margin: auto;
+        margin-bottom: 3em;
+
+        	
+	@include md {
+        margin-bottom: 0;
+        } 
+
+    }
+
+
+}
+

@@ -1,0 +1,112 @@
+
+
+// Sizes.
+$font-size: 16px;
+$line-height: 1.5;
+$heading-margin: 0.7em;
+
+// Block
+$block-padding: 100px;
+
+// FONT
+$default-font-size: 1.6rem;
+
+
+////////// COLOR VARIABLES //////////
+$content-bg: #fff;
+
+
+////////// SOCIAL COLORS //////////
+
+$social-colors: (
+  twitter: #2caae1,
+  facebook: #3b579d,
+  google: #dc4a38,
+  linkedin: #0177b5,
+  pinterest: #cc2127,
+  youtube: #e52d27,
+  github: #333333,
+  behance: #1769ff,
+  dribbble: #ea4c89,
+  reddit: #ff4500
+);
+
+
+ ////HEADER//////
+ $header-bg:url("../../assets/../assets/imgbanner-bg.svg");
+ $header-color:#fff;
+ $nav-link-color:#fff;
+ $nav-link-hover-color:#fff;
+ $nav-link-active-color:#fff;
+ $nav-link-font-size:0.937rem;
+ $header-padding-x: 0;
+ $header-padding-y:0px;
+ $nav-link-padding: 0.625rem 1.25rem;
+ $navbar-bg: theme-color(secondary);
+ $active-bg:rgba(0,0,0,.2);
+ $navlink-underlined: underline;
+ $dropdown-link-font-weight: 400;
+ $mobile-menu-width: 280px;
+ $mobile-header-height: 71px;
+ $mobile-overlay-bg:rgba(0,0,0,.8);
+ $height: inherit;
+ $main-heading-font-size: 2.25em;
+ $main-heading-font-weight: 600;
+ $main-heading-mb: 10px;
+ $sub-heading-font-size: 1.25em;
+ $sub-heading-font-weight: 400;
+ $sub-heading-mb: 20px;
+ $header-copy-font-size: 1em;
+ $header-copy-font-weight: 400;
+ $header-copy-margin: 34px 0px;
+
+ ////HEADER//////
+
+ /////BUTTONS/////
+ $border-color: #f1efef;
+ $border: 30px 22px 30px 0;
+ $btn-padding-y: .75em;
+$btn-padding-x: 1.85em;
+//$btn-font-size: 1em;
+$btn-font-size: 18px;
+$btn-font-weight: 700;
+$btn-padding: 11px 25px;
+$btn-bg-color: $secondary;
+$btn-text-color: #FFF;
+$btn-hover-text-color: #FFF;
+$btn-hover-bg-color: darken($btn-bg-color, 10%);
+$btn-white-bg-color: $white;
+$btn-white-text-color: $black;
+$btn-white-hover-text-color: $btn-white-text-color;
+$btn-white-hover-bg-color: #DEDEDE;
+$btn-black-bg-color: $black;
+$btn-black-text-color: $white;
+$btn-black-hover-text-color: #FFF;
+$btn-black-hover-bg-color: lighten($btn-black-bg-color, 5%);
+$btn-border-radius: 16px 16px 16px 0;
+$border-outline: darken($btn-bg-color, 10%);
+$badge-mb: 10px;
+/* breadcrumb styling */
+$breadcrumb-before-width: 45%;
+$breadcrumb-before-height: 100%;
+$breadcrumb-before-left: auto;
+$transparent-breadcrumb: transparent;
+$breadcrumb-top-height: -32px;
+
+$font-weight-bold: 600;
+$grid-gutter-width: 28px;
+$action-transition-duration: 0.25s;
+$action-transition-timing-function: ease;
+
+$testimonial-bg:#a70ff6 url("../../assets/../assets/imgtestimonial-bg.svg");
+$testimonial-nav-color:#d8d8d8;
+
+$input-padding-y: 1.25rem;
+$input-padding-x: 1.25rem;
+$input-placeholder-color: #919aa3;
+$input-font-size: 14px;
+
+$footer-color:#e5e5e5;
+$footer-bottom-bg:rgba(255, 255, 255, .07);
+$footer-border: rgba(151, 151, 151, .07);
+$owl-overlay-bg: rgba(60,55,241,.8);

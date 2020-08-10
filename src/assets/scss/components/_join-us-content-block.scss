@@ -1,0 +1,102 @@
+.join-us-content-block {
+    margin: 3em 0;
+ 
+    &__heading {
+        color: $black;
+        font-size: 1.75em;
+        margin-bottom: 1em; 
+        font-weight: 600;
+        max-width: 75%;
+        text-align: left;
+
+    }
+
+    &__copy{
+        /*font-weight: 600; */
+        line-height: 1.5;
+        margin-bottom: 1em;
+    
+    }
+
+    ul > li {
+        list-style-type: disc;
+        line-height: 1.8;
+        margin-left: 13px;
+    }
+
+    &::after {
+        height: 2px;
+        display: block;
+        width: 75%;
+        background: #44318b;
+        border-right: 1px #fff;
+        content: "";
+        margin: 3em auto;
+    }
+
+ }
+ 
+
+
+ .join-us-content-block-testimonial {
+
+     h2 {
+        @include headline ($heading-color, $heading-size);  
+        color: $primary-color;
+    }
+
+
+    &__body {
+        /* max-width: 85%; */
+        font-size: 1.25em;
+        line-height: 1.2;
+        font-weight: 900;
+        color: #000;
+
+        span {
+            display: block;
+            margin-top: 1em;
+            color: $primary-color;
+        }
+
+    }
+
+    &__box {
+        background: $color-mint;
+        width: auto;
+        padding: 1em 1em;
+        border-radius: 140px 154px 154px 0;
+        max-width: 33em;
+        margin-left: 0;
+
+        @include md {
+            margin-left: 5em;
+            padding: 6em 3em;
+            }
+
+    }
+
+}
+
+@media only screen and (max-width: 800px) {
+    .join-us-content-block-testimonial{
+        background: $color-mint;
+        width: 100%;
+        border-radius: 0px;
+        /* max-width: 0; */
+        margin-left: 0;
+   }
+}
+
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+
+        .join-us-content-block-testimonial{
+            background: $color-mint;
+            width: 100%;
+            border-radius: 0;
+            margin-left: -2em;
+            border-radius: 140px 154px 154px 0;
+    }
+
+}

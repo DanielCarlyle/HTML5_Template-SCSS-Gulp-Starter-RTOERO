@@ -1,0 +1,55 @@
+.blog-posts-block {
+    margin: 3em 0;
+    position: relative;
+    bottom: 0;
+    right: 0;
+
+    &__main-heading {
+        @include headline ($heading-color, $heading-size);    
+    }
+
+        h3 {
+            color: $secondary-color;
+            margin-top: 15px;
+            font-weight: bold;  
+        }
+
+
+        hr {
+            margin-top: 1rem;
+            margin-bottom: 2rem;
+            border: 0;
+            border-top: 3px solid rgb(159, 221, 193);
+            max-width: 75%;
+        }
+
+
+        .card .card-body {
+            padding: 18px 8px;
+        }
+          
+        .card .card-body .card-title {
+            font-size: 1.25em;
+            margin-bottom: 10px;
+            color: $black;
+            font-weight: 800;
+        }
+        
+        .card .card-body .card-meta {
+            font-size: .75rem;
+            margin: 5px 0 15px;
+            color: $color-purple;
+            font-weight: 600;
+        }
+
+        .card .card-text {
+            margin-top: 1em;
+            line-height: 1.5;
+            font-weight: 400;
+        }
+        
+        
+
+
+
+    }

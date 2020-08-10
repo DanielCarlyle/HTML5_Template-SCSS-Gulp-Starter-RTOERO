@@ -1,0 +1,438 @@
+
+
+.services--block {
+    background-color: #fff;
+    position: relative;
+    z-index: 5;
+    border-radius: 6px;
+    top: 0;
+    //border: 1px solid #a4d6bd;
+    border-radius: 12px;
+    padding: 16px 0 0;
+    box-shadow: 1px 3px 1px $grey;
+
+    @include md {
+        top: -8em;
+        border-radius: 12px;
+
+    }
+
+    &__image {
+        max-width: 96px;
+        height: auto;
+    }
+
+
+     h2 {     
+        color: $color-magenta;
+        max-width: 95%;
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+        font-weight: 700;
+    }
+
+    h5 {
+        color: $black;
+        max-width: 10em;
+        margin: 0 auto;
+        text-align: center;
+        line-height: 1.4;
+        margin-top: .5em;
+    }
+
+    .border-right {
+        border-right: 0px solid #dee2e6 !important;
+
+
+        @include md {
+            border-right: 1px solid #dee2e6 !important;
+            }
+
+    }
+
+
+}
+
+ .join-community {
+    margin: 3em 3em 4em;
+
+    @include md {
+    margin: 4em 2em 8em;
+    }
+
+   p {
+       max-width: 85%;
+   }
+
+   img {
+       max-width: 100%;
+   }
+
+   .join-img-1 {
+     z-index: -1;
+     /*position: absolute; */
+
+   }
+
+   .join-img-2 {
+    display: none;   
+
+    @include md {
+        display: block;
+        z-index: -3;
+        position: absolute;
+        right: -119px;
+        top: -49px;
+
+    }
+   }
+
+ }
+
+
+ .figures {
+    position: relative; 
+    margin-top: 2em; 
+    padding: 2em 0;
+    border-top: 1px solid #f9f9f9;
+ }
+
+ .sp-counter {
+    border-radius: 10px;
+    //box-shadow: 0 10px 10px -10px #000;
+    color: #442e8b;
+    background-color: transparent;
+    position: relative;
+    padding: 10px 20px;
+    display: inline-block;
+
+    /*&:after {
+      border-radius:20px 20px 0 0;
+      content: '';
+      display: inline-block;
+      position: absolute;
+      left: 50%;
+      right: auto;
+      transform: translateX(-50%);
+      bottom: 0;
+      width: 96%;
+      height: 7px;
+      background-color: $secondary;
+    }*/
+    &__digit {
+      font-size: 40px;
+      line-height: 1;
+      margin: 0;
+    }
+    &__label {
+      color: $secondary-color;  
+      body & {
+        font-size: 1rem;
+        font-weight: 700;
+        margin-top: 8px;;
+      }
+
+      a{
+        color: $secondary-color;
+
+        &:hover {
+            color: darken($secondary-color, 10%);
+           }
+
+       }
+
+    }
+  }
+
+  .counters {
+    display: flex;
+    /*background: rgba(255, 255, 255, 0.75); */
+    padding: 25px;
+    /*border-radius: 10px; */
+    /*box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2); */
+
+
+}
+
+.counter {
+    /* letter-spacing: 0.125rem; */
+    color: $primary-color;
+    line-height: 1;
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    height: 2.125rem;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 0;
+    margin: 0.5em 3.25rem;
+    letter-spacing: -1px;
+    text-shadow: 1px 1px 1px #b9abb3;
+
+	& > span {
+		z-index: 1;
+		display: flex;
+		flex-direction: column;
+		height: 100%;
+		transition: transform 2s ease;
+		transform: translateY(0);
+		line-height: 1;
+		span {
+			flex: 0 0 100%;
+			height: 100%;
+		}
+	}
+	$d: 0;
+	$inc: 0.375;
+	@for $i from 1 through 20 {
+		&:nth-child(#{$i}) > span {
+			transition-delay: #{$d * 1s};
+		}
+		$d: $d + $inc;
+    }
+    
+    @include md {
+        margin-bottom: .5em;
+        font-size: 2.25em;
+        margin: 2rem 6.25rem 1em;
+
+    }
+
+
+}
+
+
+.insurance--plans {
+    background: url(../../assets/img/Insurance-block-background.png);
+   background-repeat: no-repeat;
+   background-size: cover;
+   margin: 0 auto;
+   background-position: 0% 79%;
+   z-index: -1;
+   min-height: 68em; 
+
+   @include sm {
+    min-height: 30em;
+    } 
+
+   &__main-heading {
+    color:$white;
+    font-size: 2em;
+    font-weight: 600;
+    margin: 2em 0 1.25em;
+    text-align: center;
+
+    @include sm {
+   text-align: left;
+   margin: 0 0 1.25em;
+   } 
+
+
+}
+
+   &__wrapper {
+    background-color: $white;
+    position: relative;
+    z-index: 5;
+    border-radius: 6px;
+    padding: 55px 19px 55px;
+    box-shadow: -3px 3px 10px #414346;
+    width: 75%;
+    display: block;
+    margin: 0 auto;
+
+    @include sm {
+        display: flex;
+        width: 100%;
+    
+    } 
+   }
+
+   &__wrapper-heading{
+       color: $black;
+       margin-top: 10px;
+       font-weight: 400;
+       font-size: 1.25em;
+       margin-bottom: 28px;
+   }
+
+   .border-right {
+    border-right: 0px solid #dee2e6!important;
+
+    @include sm {
+        border-right: 1px solid #dee2e6!important;
+    
+    } 
+}
+
+}
+
+     .single-testimonial {
+        //margin: 1em 0 0;
+        margin-bottom: -2em;
+
+         h2 {
+            @include headline ($heading-color, $heading-size);  
+            color: $primary-color;
+        }
+    
+    
+        &__body {
+            /* max-width: 85%; */
+            font-size: 1.25em;
+            line-height: 1.2;
+            font-weight: 900;
+            color: #000;
+
+            span {
+                display: block;
+                margin-top: 1em;
+                color: $primary-color;
+            }
+
+        }
+
+        &__box {
+            background: #9fddc1;
+            min-width: 20em;
+            padding: 6em 5em;
+            border-radius: 140px 154px 154px 0;
+            //max-width: 18em;
+            //margin-left: 2em;
+
+            @include lg {
+                margin-left: 10em;
+                min-width: 26em;
+            
+            } 
+
+        }
+    
+    }
+
+
+
+    @media only screen and (max-width: 800px) {
+        .single-testimonial__box{
+            background: #9fddc1;
+            width: 100%;
+            padding: 4em;
+            border-radius: 0px;
+            /* max-width: 0; */
+            margin-right: 2em;
+       }
+    }
+
+
+    @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+
+            .single-testimonial__box{
+                background: #9fddc1;
+                width: 100%;
+                padding: 4em;
+                border-radius: 0;
+                margin-left: -2em;
+                border-radius: 140px 154px 154px 0;
+        }
+
+ }
+
+
+
+    .news-publications-block {
+    margin: 3em 0 0;
+    min-height: 75vh;
+    background-image: url(../../assets/img/news-image.png);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: 98% 100%;
+    position: relative;
+    bottom: 0;
+    right: 0;
+
+        h2 {
+            @include headline ($color-purple, $heading-size);  
+        }
+
+        h3 {
+            color: $secondary-color;
+            margin-top: 15px;
+            font-weight: bold;  
+        }
+
+
+        hr {
+            margin-top: 1rem;
+            margin-bottom: 2rem;
+            border: 0;
+            border-top: 3px solid rgb(159, 221, 193);
+            max-width: 75%;
+        }
+    }
+
+    .foundation-block {
+        background: url(../../assets/img/video-background.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: -ms-flexbox;
+        display: flex;
+        min-height: 40em;
+        width: 100%;
+        background-position: left;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -ms-flex-align: center;
+        align-items: center;
+        padding: 2em 1em;
+
+        h3 {
+            font-size: 1rem;
+            color: $color-mint;
+            font-size: 1em;
+            margin-bottom: .5em;
+            font-weight: 700;
+        }
+
+        h2 {
+            @include headline ($heading-color, $heading-size);  
+            color: $white;
+        } 
+
+        ul {
+
+            list-style-type: disc;
+            margin-left: 10px; 
+        }
+
+        li {
+            color: #fff;
+            line-height: 1.6;
+            font-weight: 300;
+            padding: 8px 0px;
+            max-width: 24em;
+          }
+
+    }
+
+
+    .our-partners-block {
+        padding: 2em 2em 1em;
+
+        h2 {
+            @include headline ($heading-color, $heading-size);  
+        }
+
+        img {
+            width: 184px;
+            padding: 1em 1.25em;
+            height: auto;
+
+            &:hover {
+                filter: opacity(25%);
+            }
+        }
+
+
+
+    }

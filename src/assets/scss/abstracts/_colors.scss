@@ -1,0 +1,132 @@
+// Colors
+
+// SCSS Color Variables | Named with this: http://chir.ag/projects/name-that-color
+$white: #fff;
+$pickled-bluewood: #2f404f;
+$persianRed: #d32f2f;
+
+// Theme CSS Color Variables
+:root {
+	--theme-text: #{$pickled-bluewood};
+	--theme-background: #{$white};
+	--theme-error: #{$persianRed};
+}
+
+// Theme SCSS Color Variables
+$theme-text: var(--theme-text);
+$theme-background: var(--theme-background);
+$theme-error: var(--theme-error);
+
+// COLORS
+$color-mint: #8fcea5;
+$color-burgundy:  #891c56;
+$color-magenta: #DC1E8A;
+$color-red:  #ed1c24;
+$color-purple: #410099;
+$color-primary-light:  #f391bc;
+//$color-primary-light: #e24198;
+$color-primary-light: #DC1E8A;
+$color-primary-dark: #44318B;
+$color: #fff;
+
+$primary-color: $color-purple;
+$secondary-color: #DC1E8A;
+$tertiary-color: $color-mint;
+$primary-foundation-color: #861054;
+
+
+$heading-color: $color-purple;
+$heading-size: 2rem;
+
+$color-secondary-light: #ffb900;
+$color-secondary-dark: #ff7730;
+
+$color-tertiary-light: #2998ff;
+$color-tertiary-dark: #5643fa;
+
+$color-grey-light-1: #f7f7f7;
+$color-grey-light-2: #eee;
+
+$color-grey-dark: #777;
+$color-grey-dark-2: #999;
+$color-grey-dark-3: #333;
+
+$color-white: #fff;
+$color-black: #000;
+
+$white: #FFFFFF;
+$black: #000000;
+$font-color: #444444;
+
+
+$theme-gradient-colors: (
+  primary:         linear-gradient(230deg, #759bff, #843cf6),
+  secondary:       linear-gradient(to right,$color-magenta , #868e96),
+  success:         linear-gradient(45deg, #7bffce, #30c93e),
+  info:            linear-gradient(to bottom, #0e4cfd, #6a8eff),
+  warning:         linear-gradient(135deg, #ffc480, #ff763b),
+  danger:          linear-gradient(316deg, #fc5286, #fbaaa2),
+  light:           linear-gradient(to right, #cfd9df 0%, #e2ebf0 100%),
+  dark:            linear-gradient(to right, #7d7979 0%, #000000 100%)
+);
+
+
+$primary:       $color-purple !default;
+$secondary:     $color-magenta !default;
+$success:       $green !default;
+$info:          $cyan !default;
+$warning:       $yellow !default;
+$danger:        $red !default;
+$light:         $gray-100 !default;
+$dark:          $gray-800 !default;
+
+$theme-colors: (
+  primary:         $primary,
+  secondary:      $secondary,
+  success:        $green,
+  info:           $cyan,
+  warning:         #ffe671,
+  danger:          #ff696d,
+  light:           #506690,
+  dark:            #000000
+);
+
+////////// COLOR SYSTEM //////////
+
+$blue:              #5E50F9;
+$indigo:            #6610f2;
+$purple:            #6a008a;
+$pink:              #E91E63;
+$red:               #f96868;
+$orange:            #f2a654;
+$yellow:            #f6e84e;
+$green:             #46c35f;
+$teal:              #58d8a3;
+$cyan:              #57c7d4;
+$black:             #000;
+$white:             #ffffff;
+$white-smoke:       #f2f7f8;
+$violet:            #41478a;
+$darkslategray :    #2e383e;
+$dodger-blue :      #3498db;
+
+
+$colors: (
+  blue:             $blue,
+  indigo:           $indigo,
+  purple:           $purple,
+  pink:             $pink,
+  red:              $red,
+  orange:           $orange,
+  yellow:           $yellow,
+  green:            $green,
+  teal:             $teal,
+  cyan:             $cyan,
+  white:            $white,
+  gray:             #434a54,
+  gray-light:       #aab2bd,
+  gray-lighter:     #e8eff4,
+  gray-lightest:    #e6e9ed,
+  gray-dark:        #0f1531,
+  black:            #000000
+);

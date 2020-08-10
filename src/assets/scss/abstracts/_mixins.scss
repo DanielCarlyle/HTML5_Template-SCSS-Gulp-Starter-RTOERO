@@ -1,0 +1,332 @@
+@import 'variables';
+
+
+
+/***********************************
+ * Definition
+ ***********************************/
+ @mixin ribbon-title(
+    $font-size: 18px,
+    $color: #fff,
+    $background-color: $orange,
+    $display: block,
+    $shadow: drop-shadow(0 1px 2px rgba(0, 0, 0, .5)),
+  
+    $paddingVertical: 10px,
+    $paddingHorizontal: 0,
+    $margin: 20px auto,
+  
+    $width: 496px,
+    $max-width: 70%,
+  
+    $arrow-curvature: 8px,
+    $arrow-radius: 4px,
+  ) {
+    /* Calc */
+    $arrow-offset: $arrow-curvature * -1;
+    $arrow-wing-size: $font-size / 2 + $paddingVertical;
+    $arrow-radius: $arrow-radius;
+    $arrow-offset: $arrow-offset;
+    $arrow-curvature: $arrow-curvature;
+  
+    /* Props */
+    background-color: $background-color;
+    color: $color;
+    display: $display;
+    filter: $shadow;
+    font-size: $font-size;
+    line-height: 1;
+    margin: $margin;
+    max-width: $max-width;
+    padding: $paddingVertical $paddingHorizontal;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    width: $width;
+    transition: all 300ms;
+  
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      border: $arrow-wing-size solid $background-color;
+      z-index: -1;
+    }
+  
+    &::before {
+      left: $arrow-offset;
+      border-left: $arrow-curvature solid transparent;
+      border-top-left-radius: $arrow-radius;
+      border-bottom-left-radius: $arrow-radius;
+    }
+  
+    &::after {
+      right: $arrow-offset;
+      border-right: $arrow-curvature solid transparent;
+      border-top-right-radius: $arrow-radius;
+      border-bottom-right-radius: $arrow-radius;
+    }
+  }
+  
+
+  /*
+Breakpoints and media queries in SCSS Mixin
+https://medium.com/codeartisan/breakpoints-and-media-queries-in-scss-46e8f551e2f2
+
+example:
+  @include breakpoint(sm) {
+    background: tomato;
+    padding: 30px;
+  }
+
+*/
+
+// Small tablets and large smartphones (landscape view)
+$screen-sm-min: 576px;
+
+// Small tablets (portrait view)
+$screen-md-min: 768px;
+
+// Tablets and small desktops
+$screen-lg-min: 992px;
+
+// Large tablets and desktops
+$screen-xl-min: 1200px;
+
+
+// Small devices
+@mixin sm {
+   @media (min-width: #{$screen-sm-min}) {
+       @content;
+   }
+}
+
+// Medium devices
+@mixin md {
+   @media (min-width: #{$screen-md-min}) {
+       @content;
+   }
+}
+
+// Large devices
+@mixin lg {
+   @media (min-width: #{$screen-lg-min}) {
+       @content;
+   }
+}
+
+// Extra large devices
+@mixin xl {
+   @media (min-width: #{$screen-xl-min}) {
+       @content;
+   }
+}
+
+// Custom devices
+@mixin rwd($screen) {
+   @media (min-width: $screen+'px') {
+       @content;
+   }
+}
+
+@mixin rto-btn-mixin($btn-bg-color, $color, $border-color) {
+  display: inline-block;
+  cursor: pointer;
+  background-color: $btn-bg-color;
+  color: $color; 
+  border: $border-color;
+  border-radius: $btn-border-radius;
+  font-family: inherit;
+  text-transform: uppercase;
+  margin: 1rem 0;
+  padding: $btn-padding;
+  font-weight: $btn-font-weight;
+  //font-size: $default-font-size;
+  text-decoration: none;
+  //border-bottom: 1px solid $color-primary;
+  transition: all .2s;
+  position: relative;
+  font-size: $btn-font-size;
+
+
+  &:hover, &:active, &:focus {
+    background:darken($btn-bg-color,8%);
+    transition: all 0.3s ease;
+  }
+}
+
+
+/*
+
+
+
+//Padding mixin
+@mixin padding($top, $right, $bottom, $left) {
+  padding-top: $top;
+  padding-right: $right;
+  padding-bottom: $bottom;
+  padding-left: $left;
+}
+//Margin mixin
+@mixin margin($top, $right, $bottom, $left) {
+  margin-top: $top;
+  margin-right: $right;
+  margin-bottom: $bottom;
+  margin-left: $left;
+}
+
+
+@mixin box-shadow ($shadow: none) {
+	-webkit-box-shadow: $shadow;
+	-moz-box-shadow:    $shadow;
+	box-shadow:         $shadow;
+}
+
+
+
+
+@mixin linkColor($color) {
+     color: $color;
+     text-decoration: none;
+     background-color: transparent;
+     -webkit-text-decoration-skip: objects;
+
+     &:hover, &:active, &:focus {
+         color: lighten($color, 20%);
+     }
+}
+ */
+
+  @mixin retina {
+    @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+    only screen and (-moz-min-device-pixel-ratio: 1.5),
+    only screen and (-o-min-device-pixel-ratio: 3 / 2),
+    only screen and (min-device-pixel-ratio: 1.5),
+    only screen and (min-resolution: 1.5dppx) {
+      @content;
+    }
+  }
+
+  @mixin headline ($black, $heading-size) {
+    color: $black;
+    font-size: $heading-size;
+    line-height: 110%;
+    font-weight: 700;
+    //text-shadow: 2px 2px 1px #000;
+    position: relative;
+    //@extendoverflow: hidden;
+    margin-bottom: 1rem !important;
+
+  }
+
+
+  @mixin main-banner-block ($primary-color, $color, $height) {
+    background: $primary-color;
+    padding: 2em 0;
+    min-height: $height;
+    position: relative;
+    color: $color; 
+
+  }
+
+/* original flex version 
+  @mixin breadcrumb-wrapper ($secondary-color) {
+    background:$secondary-color;
+    max-width: 800px;
+    position: relative;
+    border-bottom-right-radius: 30px;
+    margin: 0;
+    top: -36px;
+    left: -10px;  
+  }
+
+*/
+
+
+  @mixin main-heading ($color, $main-heading-font-size, $main-heading-font-weight, $main-heading-mb) {
+    color: $white;
+    font-size: $main-heading-font-size;
+    font-weight:  $main-heading-font-weight;
+    margin-bottom: $main-heading-mb;
+}
+
+@mixin sub-heading ($color, $sub-heading-font-size, $sub-heading-font-weight, $sub-heading-mb) {
+  color: $white;
+  font-size: $sub-heading-font-size;
+  font-weight:  $sub-heading-font-weight;
+  margin-bottom: $sub-heading-mb;
+}
+
+
+@mixin header-copy ($color, $header-copy-font-size, $header-copy-font-weight, $header-copy-margin) {
+  color: $white;
+  font-size: $header-copy-font-size;
+  font-weight:  $header-copy-font-weight;
+  margin: $header-copy-margin;
+}
+
+@mixin category-badge ($primary-color, $color, $badge-mb) {
+  background-color: $primary-color;
+  color: $white;
+  border-radius: 14px 14px 14px 0;
+  display: inline-block;
+  font-weight: 200;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 17px;
+  padding: .75em 1.85em;
+  font-weight: 400;
+  margin-bottom: $badge-mb;
+}
+
+@mixin breadcrumb-wrapper ($transparent-breadcrumb) {
+  background:$transparent-breadcrumb;
+  position: relative;
+  border-bottom-right-radius: 30px;
+  margin: 0;
+  top: $breadcrumb-top-height;
+  z-index: 1;
+  list-style: none;
+}
+
+@mixin breadcrumb-before($color-primary-light, $breadcrumb-before-height, $breadcrumb-before-width, $breadcrumb-before-left)  {
+  content: "";
+  background-color: $color-primary-light;
+  position: absolute;
+  height: $breadcrumb-before-height;
+  width: $breadcrumb-before-width;
+$btn-border-radius: 16px 16px 16px 0;
+  left: $breadcrumb-before-left;
+  z-index: -1;
+  border-bottom-right-radius: 30px;
+}
+
+@mixin breadcrumb-items($color-primary-light)  {
+    background: $color-primary-light;
+    font-weight: 600;
+    border-bottom-right-radius: 30px;
+    list-style: none;
+}
+
+@mixin dropdown-link($black, $navlink-underlined, $dropdown-link-font-weight) {
+  display: block;
+  width: 100%;
+  padding: .2rem 1rem;
+  clear: both;
+  line-height: 1.6;
+  font-weight: $dropdown-link-font-weight;
+  text-decoration: $navlink-underlined;
+  color: $black;
+  text-align: inherit;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 0;
+}
+
+@mixin dropdown-link-hover($secondary-color, $black) {
+  text-decoration: none;
+  //background-color: $secondary-color;
+  color: darken($black, 10%);
+  background: none;
+}

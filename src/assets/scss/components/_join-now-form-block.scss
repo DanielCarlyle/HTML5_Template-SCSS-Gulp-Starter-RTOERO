@@ -1,0 +1,38 @@
+.join-now-form-block {
+    background: $color-primary-light;
+    min-height: 30em;
+
+    @include md {
+        min-height: none;
+        } 
+
+}
+.join-now-form-block .row{
+    height: 24rem;
+}
+.join-now-form-block .content h2 {
+    font-size: 2.5em;
+    font-weight: 600;
+    margin: 0 0 .75em;
+}
+.join-now-form-block .content h3 {
+   font-size: 1.75rem;
+   line-height: 2rem;
+   max-width: 30em;
+   font-weight: 500;
+   margin-bottom: 2em;
+}
+.join-now-form-block .content p {
+   font-size: 1.25rem;
+   margin-bottom: 1em;
+   margin-top: 1em;
+   display: block;
+   padding-top: 1em;
+
+   a {
+      color: $white;
+      text-decoration: underline;
+      font-weight: bold;
+   }
+
+}

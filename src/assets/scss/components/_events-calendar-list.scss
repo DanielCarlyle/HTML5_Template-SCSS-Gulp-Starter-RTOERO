@@ -1,0 +1,83 @@
+.events-calendar-list {
+padding: 2em 0;
+
+&__main-heading {
+
+    color: $black;
+    font-size: 1.75em;
+    text-align: center;
+    margin-bottom: .5em; 
+    font-weight: 600;
+}
+
+
+&__event-listing-text {
+    color: $black;
+    font-size: 1em;
+    margin-bottom: .5em; 
+    font-weight: 600;
+}
+
+
+&__image-icon {
+    margin-right: 10px;
+}
+
+&__wrapper {
+    padding: 2em 0 0;
+}
+
+
+&__post-meta-title {
+    color: $black;
+    font-size: 1em;
+    text-align: left;
+    margin: 0 0 1em;
+    font-weight: 700;
+    letter-spacing: .1px;
+
+    @include sm {
+        font-size: 1.25em;
+    } 
+
+
+}
+
+&__post-title {
+    font-size: .75em;
+    text-align: left;
+    letter-spacing: .2px;
+    margin: 8px 0;
+    font-weight: 800;
+
+    @include sm {
+        font-size: 1em;
+    } 
+
+
+}
+
+&__post-link {
+    list-style-type: none;
+    margin: 1em 0;
+    text-align: left;
+    text-decoration: underline;
+    font-weight: 600;
+    color: #e93a97;
+}
+
+
+&__post-link:after {
+    height: 1px;
+    display: block;
+    width: 100%;
+    background: #000;
+    opacity: .5;
+    border-right: 1px #fff;
+    content: "";
+    margin: 2em 0 1em;
+}
+
+
+
+}

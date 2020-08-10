@@ -1,0 +1,117 @@
+.classified-single-page-block {
+    min-height: 75vh;
+    padding: 1em 2em;
+
+
+    &__wrapper {
+       padding: 1em 0 0;
+
+    }
+    
+
+    &__main-title {
+        color: $black;
+        font-size: 1.75em;
+        text-align: center;
+        margin-bottom: .5em; 
+        font-weight: 600;
+
+        @include sm {
+            text-align: left;
+            max-width: 65%;
+        } 
+
+    }
+
+    &__post-title {
+        color: $black;
+        font-size: 1.25em;
+        text-align: left;
+        letter-spacing: .2px;
+        margin: 8px 0;
+        font-weight: 800;
+    }
+
+    &__post-meta-title {
+        color: $color-primary-dark;
+        font-size: 1em;
+        text-align: left;
+        margin: 0 0 1em;
+        font-weight: 700;
+        letter-spacing: 0.1px;
+        margin-top: 2em;
+    }
+
+
+    &__post-category {
+        color: $color-primary-dark;
+        font-size: 1em;
+        text-align: left;
+        margin: 0 0 1em;
+        font-weight: 700;
+        letter-spacing: 0.1px;
+    }
+
+    &__post-meta-title::after {
+        height: 1px;
+        display: block;
+        width: 100%;
+        background: $black;
+        opacity: .5;
+        border-right: 1px white;
+        content: '';
+        margin: 2em 0 1em;
+    }
+
+    &__post-content {
+        font-weight: 600;
+        line-height: 1.5;
+        margin-bottom: 1em;
+    
+    }
+
+    &__post-link {
+
+        margin: 1em 0 2em;
+        
+
+        a {
+            text-align: left;
+            text-decoration: underline;
+            font-weight: 600;
+            color: $color-primary-light;
+            list-style-type: none;
+            font-size: 1.25em;
+        }
+    
+    }
+
+
+    &__contact-heading {
+        color: $black;
+        font-size: 1.25em;
+        text-align: left;
+        margin-bottom: .5em; 
+        font-weight: 600;
+    
+    }
+
+
+    &__phone-title, &__email-title, &__ad-title {
+        color: $color-primary-dark;
+        font-size: 1em;
+        text-align: left;
+        font-weight: 700;
+        letter-spacing: 0.1px;
+        margin-top: 1em;
+    }
+
+    &__phone-title-copy, &__email-title-copy, &__ad-title-copy {
+        color: $black;
+        font-size: 1em;
+        text-align: left;
+
+    }
+    
+
+}

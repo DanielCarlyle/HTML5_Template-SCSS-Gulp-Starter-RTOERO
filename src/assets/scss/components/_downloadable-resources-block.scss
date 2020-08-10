@@ -1,0 +1,22 @@
+.downloadable-resources-block { 
+
+    background: $white;
+    padding: 23px 35px;
+    margin: 2em 0;
+
+    &__main-heading {
+     color: $black;
+     font-size: 2.5em;
+     font-weight: 600;
+     margin: 0em 0 2em;
+     text-align: center;
+     //padding: 2em;
+ 
+     @include sm {
+    text-align: left;
+ } 
+
+ }
+
+
+}

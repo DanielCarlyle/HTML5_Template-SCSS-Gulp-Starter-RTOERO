@@ -1,0 +1,68 @@
+.departments-block {
+    margin: 4em 0 2em;
+
+   &__department-main-heading {
+    color: $black;
+    font-size: 2.25em;
+    margin-bottom: 1em;
+    font-weight: 600;
+    max-width: 75%;
+    text-align: left;
+
+   }
+
+   &__department-title-heading {
+    color: $black;
+    font-size: 1.5em;
+    margin: 1em 0;
+    font-weight: 600;
+    max-width: 75%;
+    text-align: left;
+   }
+
+&__staff-name {
+    font-size: 1em;
+    text-align: left;
+    letter-spacing: .2px;
+    margin: 8px 0;
+    font-weight: 800;
+
+    @include sm {
+        font-size: 1.4em;
+    } 
+}
+
+&__staff-link {
+    list-style-type: none;
+    margin: 1em 0;
+    text-align: left;
+    text-decoration: underline;
+    font-weight: 600;
+    color: #e93a97;
+}
+
+&__staff-title {
+    color: $primary-color;
+    font-size: .75em;
+    text-align: left;
+    margin: .5em 0 1em;
+    font-weight: 600;
+
+    @include sm {
+        font-size: 1em;
+    } 
+   }
+
+
+&__staff-image {
+    max-height: 400px;
+    width: 260px;
+    height: 350px;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 1em;
+}  
+
+
+
+}

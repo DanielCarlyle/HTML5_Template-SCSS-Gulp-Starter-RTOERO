@@ -1,0 +1,228 @@
+.btn {
+    display: inline-block;
+    font-family: $btn-font-family;
+    font-weight: $btn-font-weight;
+    //color: $body-color;     
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    //background-color: transparent;
+    //border: $btn-border-width solid transparent;
+    @include button-size($btn-padding-y, $btn-padding-x, $btn-font-size, $btn-line-height, $btn-border-radius);
+    @include transition($btn-transition);
+  
+    @include hover {
+      //color: $body-color;
+      text-decoration: none;
+      transform: translateY(-3px);
+      box-shadow: 0 1rem 2rem rgba($color-black,.2);
+
+      &::after {
+          transform: scaleX(1.4) scaleY(1.6);
+          opacity: 0;
+      }
+    }
+  
+    &:focus,
+    &.focus {
+      outline: 0;
+      box-shadow: $btn-focus-box-shadow;
+    }
+  
+    // Disabled comes first so active can properly restyle
+    &.disabled,
+    &:disabled {
+      opacity: $btn-disabled-opacity;
+      @include box-shadow(none);
+    }
+  
+    &:not(:disabled):not(.disabled):active,
+    &:not(:disabled):not(.disabled).active {
+      @include box-shadow($btn-active-box-shadow);
+  
+      &:focus {
+        @include box-shadow($btn-focus-box-shadow, $btn-active-box-shadow);
+      }
+    }
+
+
+    &--white {
+        @include rto-btn-mixin($white, $color, #000 #fff);
+     }
+
+    &--green {
+        @include rto-btn-mixin($green, $color, #000 #fff);
+     }
+
+     &--red {
+        @include rto-btn-mixin($color-red, $color, #000 #fff);
+
+     }
+
+  }
+
+
+
+
+.rto-btn {
+    &,
+    &:link,
+    &:visited {
+        @include rto-btn-mixin ($primary, $color, #fff);
+        background-color: $primary;
+        border-radius: $border;
+    }
+    
+    @include hover {
+        //color: $body-color;
+        text-decoration: none;
+        transform: translateY(-3px);
+        box-shadow: 0 1rem 2rem rgba($color-black,.2);
+  
+        &::after {
+            transform: scaleX(1.4) scaleY(1.6);
+            opacity: 0;
+        }
+      }
+    
+    &:active,
+    &:focus {
+        outline: none;
+        transform: translateY(-3px);
+        box-shadow: 0 .5rem 1rem rgba($color-black,.2);
+        transform: scaleX(1.4) scaleY(1.6);
+    }
+    
+    &--white {
+        @include rto-btn-mixin($primary, $color, #000 #fff);
+     }
+
+    &--green {
+        @include rto-btn-mixin($primary, $color, #000 #fff);
+     }
+
+     &--red {
+        @include rto-btn-mixin($color-red, $color, #000 #fff);
+
+     }
+
+    
+    &::after {
+        content: "";
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+        border-radius: 10rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        transition: all .4s;
+    }
+    
+    &--animated {
+        animation: moveInBottom .5s ease-out .75s;
+        animation-fill-mode: backwards;
+    }
+}
+
+.btn-modal {
+    @include rto-btn-mixin ($primary, $color, #fff);
+}
+
+
+/*
+.btn-text {
+    &:link,
+    &:visited {
+        font-size: $default-font-size;
+        color: $color-primary;
+        display: inline-block;
+        text-decoration: none;
+        border-bottom: 1px solid $color-primary;
+        padding: 3px;
+        transition: all .2s;
+    }
+
+    &:hover {
+        background-color: $color-primary;
+        color: $color-white;
+        box-shadow: 0 1rem 2rem rgba($color-black, .15);
+        transform: translateY(-2px);
+    }
+
+    &:active {
+        box-shadow: 0 .5rem 1rem rgba($color-black, .15);
+        transform: translateY(0);
+    }
+}
+
+
+
+
+.btn-primary {
+    color: #fff;
+    background-color: $color-primary-dark;
+    border-color: $color-primary-dark;
+
+    &:hover {
+        background: darken($color-primary-dark, 10%)
+    }
+}
+
+
+
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+    background-color: $color-primary-dark !important;
+    border-color: $color-primary-dark !important; 
+}
+
+
+.btn-secondary, .btn-secondary:hover, .btn-secondary:active, .btn-secondary:visited {
+    background-color: $color-primary-light !important; 
+    border-color: $color-primary-light !important; 
+}
+
+.btn-outline-secondary {
+    color:$color-primary-light;
+    border-color:$color-primary-light;
+
+    &:hover {
+        background: darken($color-primary-light, 10%)
+
+    }
+
+}
+
+
+*/
+
+
+/* ------- customize primary buttons -------- */   
+$mynewcolor: $color-primary-dark;
+$mynewcolor2: $secondary-color;
+
+.btn-primary {
+    @include button-variant($mynewcolor, darken($mynewcolor, 7.5%), darken($mynewcolor, 10%), lighten($mynewcolor,5%), lighten($mynewcolor, 10%), darken($mynewcolor,30%));
+}
+
+.btn-outline-primary {
+    @include button-outline-variant($mynewcolor, #222222, lighten($mynewcolor,5%), $mynewcolor);
+}
+
+.btn-secondary {
+    @include button-variant($mynewcolor2, darken($mynewcolor2, 7.5%), darken($mynewcolor2, 10%), lighten($mynewcolor2,5%), lighten($mynewcolor2, 10%), darken($mynewcolor2,30%));
+}
+
+.btn-outline-secondary {
+    @include button-outline-variant($mynewcolor2, #222222, lighten($mynewcolor2,5%), $mynewcolor2);
+}
+
+
+
+
+
+/* use @mixins */
+.btn-custom {
+  @include button-variant(red, white, red, red);
+}

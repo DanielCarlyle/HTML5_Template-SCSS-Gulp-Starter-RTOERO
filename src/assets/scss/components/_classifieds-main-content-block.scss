@@ -1,0 +1,72 @@
+.classified-content-block {
+    min-height: 75vh;
+    padding: 1em 2em;
+
+
+    &__wrapper {
+       padding: 1em 0 0;
+
+    }
+    
+
+    &__main-title {
+        color: $black;
+        font-size: 1.75em;
+        text-align: center;
+        margin-bottom: 1em; 
+        font-weight: 600;
+
+        @include sm {
+        text-align: left;
+        } 
+
+    }
+
+    &__post-title {
+        color: $black;
+        font-size: 1.25em;
+        text-align: left;
+        letter-spacing: .2px;
+        margin: 8px 0;
+        font-weight: 800;
+    }
+
+    &__post-meta-title {
+        color: $color-primary-dark;
+        font-size: 1em;
+        text-align: left;
+        margin: 0 0 1em;
+        font-weight: 700;
+        letter-spacing: 0.1px;
+    }
+
+    &__post-content {
+        font-weight: 600;
+        line-height: 1.5;
+        margin-bottom: 1em;
+    
+    }
+
+    &__post-link {
+        list-style-type: none;
+        margin: 1em 0;
+        text-align: left;
+        text-decoration: underline;
+        font-weight: 600;
+        color: $color-primary-light;
+    
+    }
+
+    &__post-link::after {
+        height: 1px;
+        display: block;
+        width: 100%;
+        background: $black;
+        opacity: .5;
+        border-right: 1px white;
+        content: '';
+        margin: 2em 0 1em;
+    }
+    
+
+}

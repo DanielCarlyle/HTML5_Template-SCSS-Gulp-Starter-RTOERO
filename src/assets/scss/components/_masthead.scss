@@ -1,0 +1,858 @@
+.main-heading {
+    @include main-heading ($color, $main-heading-font-size, $main-heading-font-weight, $main-heading-mb); 
+}
+
+.sub-heading {
+    @include sub-heading ($color, $sub-heading-font-size, $sub-heading-font-weight, $sub-heading-mb);
+}
+
+.copy {
+    @include header-copy ($color, $header-copy-font-size, $header-copy-font-weight, $header-copy-margin);
+}
+
+.active a {
+    color: $white;
+    text-decoration: none;
+}
+
+
+
+.masthead {
+    /*background-image: url(../../assets/img/Hero-section-576px.jpg); */
+    background: $primary-color;
+    /* min-height: 100vh; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: inherit;
+    min-height: 34em;
+    background-position: 50% 0;
+
+
+    @include md {
+    background-image: url(../../assets/img/Hero-section-867px.jpg);
+    //min-height: 502px;
+    background-size: cover;
+    background-position: 55% 0;
+    background-repeat: no-repeat;
+    min-height: 38em;
+            } 
+
+    @include xl {
+        background-image: url(../../assets/img/header-home-page.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 0 auto;
+        /* background-attachment: fixed; */
+        background-position: center center;
+        min-height: 41em;
+        /* z-index: -1; */
+        
+            }    
+
+     .banner-heading {
+        @include headline ($heading-color, $heading-size);
+        color: $white;
+        margin-top: 2em;
+        max-width: 80%;
+        font-weight: 700;
+        font-size: 1.45rem;
+       // text-shadow: 1px 1px 1px #000;
+
+        @include md {
+            width: auto; 
+            margin-right: 1.5em;   
+            font-size: 1.65em;
+            text-shadow: none;
+            }
+
+            @include lg {
+                font-size: 1.75rem;
+                max-width: 65%;
+                text-shadow: none;
+                }   
+    }
+
+    .breadcrumb-wrapper {
+        @include breadcrumb-wrapper ($transparent-breadcrumb);
+    }    
+     
+    .breadcrumb-wrapper:before {
+        @include breadcrumb-before($color-primary-light, $breadcrumb-before-height, $breadcrumb-before-width, $breadcrumb-before-left); 
+    }
+
+
+}
+
+
+.banner-text {
+    margin-top: 42px;
+}
+
+.banner-text h1 {
+   color: #003366;
+    max-width: 80%;
+    font-size: 1.75rem;
+
+    @include md {
+        color: #036;
+        max-width: 95%;
+        font-size: 2.25rem;
+        margin-bottom: 1rem; 
+
+    }   
+}
+
+    .banner-text {
+        max-width: none;
+
+
+        @include md {
+            max-width: 80%;
+        } 
+
+    }
+
+
+.banner-lead {
+    font-size: 1.25rem;
+    max-width: none;
+    margin: 10px 0;
+    font-weight: 700;
+    color: #ffffff;    
+    //padding-bottom: 5em;
+
+    @include md {
+        max-width: 90%;
+    } 
+
+
+}
+
+.banner-btn {
+    font-size: 1rem;
+    /* border-radius: 0.3rem; */
+    display: inline-block;
+    font-weight: 600;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    line-height: 1.5;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    color: #fff;
+    background-color: #339999;
+    border-color: #17a2b8;
+    /* padding: .5rem 1rem; */
+    /* font-size: 1.25rem; */
+    line-height: 1.5;
+    cursor: pointer;
+}
+
+.banner-btn:hover {
+    color: #fff;
+    background-color: #138496;
+    border-color: #117a8b;
+    text-decoration: none;
+}
+
+
+
+/* 
+*****************
+About Page masthead 
+*****************
+*/
+
+.about-masthead {
+    @include main-banner-block ($primary-color, $color, $height);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: inherit;
+    background-position: 90% top;
+
+
+    @include md {
+        background-image: url(../../assets/img/Header.png);
+        }
+
+
+    .breadcrumb-wrapper {
+        @include breadcrumb-wrapper ($transparent-breadcrumb);
+        list-style: none;
+    }    
+     
+    .breadcrumb-wrapper:before {
+        @include breadcrumb-before($color-primary-light, 48px, 70%, auto); 
+    }
+
+
+    .main-heading {
+        @include main-heading ($color, 2.5em, $main-heading-font-weight, $main-heading-mb); 
+    }
+
+    .sub-heading {
+        @include sub-heading ($color, $sub-heading-font-size, $sub-heading-font-weight, $sub-heading-mb);
+        max-width: 80%; 
+    }
+
+    .copy {
+        @include header-copy ($color, $header-copy-font-size, $header-copy-font-weight, 4em 0 20px 0);
+        max-width: 85%;
+        padding-top: 0;
+
+        @include sm {
+            padding-top: 8em;
+    
+         } 
+
+    }
+
+
+.active a {
+    color: $white;
+    font-weight: bold;
+    text-decoration: none;
+    
+}
+
+}
+
+
+
+/* 
+*****************
+Foundation Home Page masthead 
+*****************
+*/
+
+.foundation-masthead {
+    background: #43318b;
+    padding: 2em 0;
+    //min-height: 592px;
+    position: relative;
+    //background-image: url(../../assets/img/Insurance-Header.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: inherit;
+
+    @include md {
+        background-image: url(../../assets/img/Insurance-Header.png);
+    } 
+
+/*
+     &__main-heading {
+        color: $white;
+        font-size: 2.25em;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+
+    &__sub-heading {
+        color: $white;
+        font-size: 1.25em;
+        font-weight: 600;
+        margin-bottom: 10px;
+        max-width: 65%;
+    }
+
+    &__copy {
+    color: $white;
+    font-size: 1em;
+    font-weight: 400;
+    margin-bottom: 20px;
+    max-width: 65%;
+    margin-top: 4em;
+}
+
+
+    */
+
+    .breadcrumb-wrapper {
+        @include breadcrumb-wrapper ($transparent-breadcrumb);
+    }    
+     
+    .breadcrumb-wrapper:before {
+        @include breadcrumb-before($color-primary-light, $breadcrumb-before-height, $breadcrumb-before-width, $breadcrumb-before-left); 
+    }
+
+
+
+.breadcrumb-items {
+    @include breadcrumb-items($color-primary-light) 
+}
+
+.active a {
+    color: $white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+}
+
+
+/* 
+*****************
+Foundation Index Page masthead 
+*****************
+*/
+
+
+.foundation-index-masthead {
+
+    @include main-banner-block ($color-burgundy, $color, $height);
+
+    .breadcrumb-wrapper {
+        @include breadcrumb-wrapper ($transparent-breadcrumb);
+    }    
+     
+    .breadcrumb-wrapper:before {
+        @include breadcrumb-before($color-primary-light, $breadcrumb-before-height, $breadcrumb-before-width, $breadcrumb-before-left); 
+    }
+
+    .main-heading {
+        @include main-heading ($color, $main-heading-font-size, $main-heading-font-weight, $main-heading-mb); 
+    }
+
+    .sub-heading {
+        @include sub-heading ($color, $sub-heading-font-size, $sub-heading-font-weight, $sub-heading-mb); 
+    }
+
+    .active a {
+        color: $white;
+        text-decoration: none;
+    }
+
+}
+
+
+
+/* 
+*****************
+RTO Classifieds Page masthead 
+*****************
+*/
+
+.classifieds-masthead {
+
+    @include main-banner-block ($primary-color, $color, $height);
+
+    .breadcrumb-wrapper {
+        @include breadcrumb-wrapper ($transparent-breadcrumb);
+    }    
+     
+    .breadcrumb-wrapper:before {
+        @include breadcrumb-before($color-primary-light, $breadcrumb-before-height, $breadcrumb-before-width, $breadcrumb-before-left); 
+    }
+
+
+    .main-heading {
+        @include main-heading ($color, $main-heading-font-size, $main-heading-font-weight, $main-heading-mb); 
+    }
+
+    .sub-heading {
+        @include sub-heading ($color, $sub-heading-font-size, $sub-heading-font-weight, $sub-heading-mb); 
+    }
+
+    .copy {
+        @include header-copy ($color, $header-copy-font-size, $header-copy-font-weight, $header-copy-margin);
+    }
+
+    .active a {
+        color: $white;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+}
+
+
+/* 
+*****************
+Programs & Services Page masthead 
+*****************
+*/
+
+.programs-services-masthead {
+    background: #43318b;
+    padding: 2em 0;
+    //min-height: 500px;
+    position: relative;
+
+    background-image: url(../../assets/img/Header.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: inherit;
+
+
+     &__main-heading {
+        color: $white;
+        font-size: 2.25em;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+
+    &__sub-heading {
+        color: $white;
+        font-size: 1.25em;
+        font-weight: 600;
+        margin-bottom: 10px;
+        max-width: 65%;
+    }
+
+    &__copy {
+    color: $white;
+    font-size: 1em;
+    font-weight: 400;
+    margin-bottom: 20px;
+    max-width: 65%;
+    padding-top: 0;
+
+    @include sm {
+        padding-top: 8em;
+
+     } 
+    }  
+
+    .breadcrumb-wrapper {
+        @include breadcrumb-wrapper ($transparent-breadcrumb);
+    }    
+     
+    .breadcrumb-wrapper:before {
+        @include breadcrumb-before($color-primary-light, $breadcrumb-before-height, $breadcrumb-before-width, $breadcrumb-before-left); 
+    }
+
+
+.breadcrumb-items {
+    /*-ms-flex-line-pack: center;
+    /* align-content: center; */
+    /*-ms-flex-pack: center;
+    /* justify-content: center; */
+    background: $color-primary-light;
+    font-weight: 600;
+    border-bottom-right-radius: 30px;
+    z-index: 0;
+    list-style: none;
+
+
+    .active a {
+        color: $white;
+        font-weight: bold;
+        text-decoration: none;
+    }
+    
+
+
+}
+
+
+}
+
+
+
+
+/* 
+*****************
+Resources Page masthead 
+*****************
+*/
+.resources-masthead {
+    background: #43318b;
+    padding: 2em 0;
+    //min-height: 617px;
+    position: relative;
+
+    background-image: url(../../assets/img/resources-page-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: inherit;
+    background-position: bottom;
+
+
+     &__main-heading {
+        color: $white;
+        font-size: 2.25em;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+
+    &__sub-heading {
+        color: $white;
+        font-size: 1.25em;
+        font-weight: 600;
+        margin-bottom: 10px;
+        max-width: 65%;
+    }
+
+    &__copy {
+    color: $white;
+    font-size: 1em;
+    font-weight: 400;
+    margin-bottom: 20px;
+    max-width: 65%;
+    margin-top: 4em;
+    padding-top: 0;
+
+    @include sm {
+        padding-top: 8em;
+
+     } 
+    
+}
+
+}
+.breadcrumb-wrapper {
+    @include breadcrumb-wrapper ($transparent-breadcrumb);
+}    
+ 
+.breadcrumb-wrapper:before {
+    @include breadcrumb-before($color-primary-light, $breadcrumb-before-height, $breadcrumb-before-width, $breadcrumb-before-left); 
+}
+
+.breadcrumb-items {
+    /*-ms-flex-line-pack: center;
+    /* align-content: center; */
+    /*-ms-flex-pack: center;
+    /* justify-content: center; */
+    background: $color-primary-light;
+    font-weight: 600;
+    border-bottom-right-radius: 30px;
+    z-index: 0;
+    list-style: none;
+
+}
+
+
+.active a {
+    color: $white;
+    font-weight: bold;
+    text-decoration: none;
+
+
+
+}
+
+/* 
+*****************
+Insurance Main Page masthead 
+*****************
+*/
+
+.insurance-masthead {
+    background: #43318b;
+    padding: 2em 0;
+    //min-height: 592px;
+    position: relative;
+
+    background-image: url(../../assets/img/Insurance-Header.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: inherit;
+
+
+     &__main-heading {
+        color: $white;
+        font-size: 2.25em;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+
+    &__sub-heading {
+        color: $white;
+        font-size: 1.25em;
+        font-weight: 600;
+        margin-bottom: 10px;
+        max-width: none;
+
+
+        @include md {
+            max-width: 65%;
+            }
+
+    }
+
+    &__copy {
+    color: $white;
+    font-size: 1em;
+    font-weight: 400;
+    margin-bottom: 20px;
+    max-width: none;
+    margin-top: 4em;
+
+    @include md {
+        max-width: 65%;
+        }
+
+}
+
+
+
+.breadcrumb-wrapper {
+    @include breadcrumb-wrapper ($transparent-breadcrumb);
+}    
+ 
+.breadcrumb-wrapper:before {
+    @include breadcrumb-before($color-primary-light, $breadcrumb-before-height, $breadcrumb-before-width, $breadcrumb-before-left); 
+}
+
+.breadcrumb-items {
+    @include breadcrumb-items($color-primary-light) 
+
+    .active a {
+        color: $white;
+        font-weight: bold;
+        text-decoration: none;
+    }
+    
+}
+
+}
+
+/* 
+*****************
+Insurance sub-section Masthead 
+*****************
+*/
+
+.primary-brand-color-masthead {
+    background: $primary-color;
+    padding: 2em 0;
+    //min-height: 300px;
+    position: relative;
+
+
+    &__main-heading {
+        color: $white;
+        font-size: 2.25em;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+
+    &__secondary-heading {
+        color: $white;
+        font-size: 1.25em;
+        font-weight: 600;
+        max-width: 73%;
+    }
+
+
+    .breadcrumb-wrapper {
+        @include breadcrumb-wrapper ($transparent-breadcrumb);
+    }    
+     
+    .breadcrumb-wrapper:before {
+        @include breadcrumb-before($color-primary-light, $breadcrumb-before-height, $breadcrumb-before-width, $breadcrumb-before-left); 
+    }
+
+     .active {
+        color: $white;
+        text-decoration: none;
+        font-weight: bolder;
+    }
+
+}
+
+/*
+.breadcrumb-items {
+
+    background: #e93a97;
+    font-weight: 600;
+    border-bottom-right-radius: 30px;
+   
+   &>div {
+      color: #fff;
+   }
+  
+   ul > li{
+  list-style-type: none;
+}
+   a {
+    color: #43318b; 
+      
+   }
+   }
+
+    */  
+
+
+
+/* 
+*****************
+Insurance Sub Page Red masthead 
+*****************
+*/
+
+.red-brand-color-masthead {
+    background: #e50c19;
+    padding: 2em 0;
+    //min-height: 300px;
+    position: relative;
+
+    .active a {
+        color: $white;
+        text-decoration: none;
+    }
+    
+
+}
+
+
+/* 
+*****************
+Search List  masthead 
+*****************
+*/
+
+.searchlist-masthead {
+    @include main-banner-block ($primary-color, $color, 300px);
+
+    .breadcrumb-wrapper {
+        @include breadcrumb-wrapper ($transparent-breadcrumb);
+    }    
+     
+    .breadcrumb-wrapper:before {
+        @include breadcrumb-before($color-primary-light, $breadcrumb-before-height, $breadcrumb-before-width, $breadcrumb-before-left); 
+    }
+
+    .main-heading {
+        @include main-heading ($color, $main-heading-font-size, $main-heading-font-weight, $main-heading-mb); 
+    }
+
+    .sub-heading {
+        @include sub-heading ($color, $sub-heading-font-size, $sub-heading-font-weight, $sub-heading-mb); 
+    }
+
+    .copy {
+        @include header-copy ($color, $header-copy-font-size, $header-copy-font-weight, $header-copy-margin);
+    }
+
+    .active a {
+        color: $white;
+        text-decoration: none;
+    }
+
+}
+
+
+/* 
+*****************
+Join Us Page  masthead 
+*****************
+*/
+
+.join-us-masthead {
+
+    @include main-banner-block ($primary-color, $color, $height);
+
+    .breadcrumb-wrapper {
+        @include breadcrumb-wrapper ($transparent-breadcrumb);
+    }    
+     
+    .breadcrumb-wrapper:before {
+        @include breadcrumb-before($color-primary-light, $breadcrumb-before-height, $breadcrumb-before-width, $breadcrumb-before-left); 
+    }
+
+    .main-heading {
+        @include main-heading ($color, $main-heading-font-size, $main-heading-font-weight, $main-heading-mb); 
+    }
+
+    .sub-heading {
+        @include sub-heading ($color, $sub-heading-font-size, $sub-heading-font-weight, $sub-heading-mb); 
+    }
+
+    .copy {
+        @include header-copy ($color, $header-copy-font-size, $header-copy-font-weight, $header-copy-margin);
+    }
+
+    .active a {
+        color: $white;
+        text-decoration: none;
+    }
+
+}
+
+
+
+/* 
+*****************
+Events Calendar Listing  masthead 
+*****************
+*/
+
+.events-calendar-masthead {
+
+    @include main-banner-block ($primary-color, $color, $height);
+
+    .breadcrumb-wrapper {
+        @include breadcrumb-wrapper ($transparent-breadcrumb);
+    }    
+     
+    .breadcrumb-wrapper:before {
+        @include breadcrumb-before($color-primary-light, $breadcrumb-before-height, $breadcrumb-before-width, $breadcrumb-before-left); 
+    }
+
+    .main-heading {
+        @include main-heading ($color, $main-heading-font-size, $main-heading-font-weight, $main-heading-mb); 
+    }
+
+    .sub-heading {
+        @include sub-heading ($color, $sub-heading-font-size, $sub-heading-font-weight, $sub-heading-mb); 
+    }
+
+    .copy {
+        @include header-copy ($color, $header-copy-font-size, $header-copy-font-weight, $header-copy-margin);
+    }
+
+    .active a {
+        color: $white;
+        text-decoration: none;
+    }
+
+}
+
+/* 
+*****************
+Blank Listing  masthead 
+*****************
+*/
+
+.blank-masthead {
+
+    @include main-banner-block (transparent, $color, 0);
+
+    .breadcrumb-wrapper {
+        @include breadcrumb-wrapper ($transparent-breadcrumb);
+    }    
+     
+    .breadcrumb-wrapper:before {
+        @include breadcrumb-before($color-primary-light, $breadcrumb-before-height, $breadcrumb-before-width, $breadcrumb-before-left); 
+    }
+
+    .breadcrumb-items {
+        @include breadcrumb-items($color-primary-light) 
+    }
+
+
+}
+
+
+/* breadcrumb items */
+.breadcrumb-items {
+    @include breadcrumb-items($color-primary-light) 
+}
+
+
+@media only screen and (max-width: 868px) {
+    .breadcrumb-wrapper:before {
+      display: none;
+  }
+  
+  }
+  
+  .breadcrumb-items a {
+      color: #fff;
+  }

@@ -1,0 +1,53 @@
+/*
+Debug Ghost CSS Elements Causing Unwanted Scrolling
+http://wernull.com/2013/04/debug-ghost-css-elements-causing-unwanted-scrolling/
+* {
+  background: #000 !important;
+  color: #0f0 !important;
+  outline: solid #f00 1px !important;
+}
+
+<style>
+    * {
+        outline: solid 0.25rem hsla(55, 100%, 100%, 0.5);
+    }
+</style>
+
+
+// Styles for commonly used HTML elements
+*,
+*::afer,
+*::before {
+   margin: 0;
+   padding: 0;
+   box-sizing: inherit;
+}
+// Root elements
+html,
+body {
+	//background: var(--theme-background);
+	background: rgba(243, 248, 249, 0);
+	line-height: 1.7;
+	//color: #000;
+	padding: 3em;
+	box-sizing: border-box;
+	
+}
+
+html {
+	//defines what 1rem is
+	font-size: 62.5%;
+}
+
+
+*/
+
+html {
+   scroll-behavior: smooth;
+   min-height: 100vh;
+}
+
+#main {
+	//padding-top: 0.5em;
+	//z-index: 1000;
+	}

@@ -1,0 +1,17 @@
+.become-member-block {
+    background: $color-primary-light;
+}
+.become-member-block .row{
+    height: 24rem;
+}
+.become-member-block .content h2 {
+    font-size: 2em;
+    font-weight: 600;
+    margin: 0 0 .75em;
+}
+.become-member-block .content p {
+    font-size: 1.2rem;
+    line-height: 2rem;
+    max-width: 30em;
+    margin-bottom: 2em;
+}

@@ -1,0 +1,39 @@
+
+html,
+body {
+	font-family: usual, Helvetica, Arial, sans-serif !important;
+	//color: $theme-text;
+	//@debugfont-weight: 400;
+}
+
+
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    margin-bottom: 0.5rem;
+    font-family: usual, Helvetica, Arial, sans-serif !important;
+    font-weight: bold;
+    line-height: 1.2;
+    color: inherit;
+    }
+
+
+
+p {
+    font-family: usual, Helvetica, Arial, sans-serif !important;
+    margin-top: 0 !important;
+    margin-bottom: 1rem !important;
+}
+
+
+.intro-body-copy {
+	color: $color-primary-dark;
+    font-size: 1em;
+    font-weight: 600;
+    line-height: 1.5;
+    padding-bottom: 1em;
+	
+	@include sm {
+		font-size: 1.25em;
+        } 
+
+}

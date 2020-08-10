@@ -1,0 +1,49 @@
+.search-results-page {
+    margin: 3em 1em 2em;
+
+  &__block {
+      margin: 1em 0;
+
+
+   &::after {
+    content: "";
+    display: block;
+    background-color: $grey;
+    height: 1px;
+     }  
+  }  
+
+   &__search-links {
+    list-style-type: none;
+    margin: 1em 0;
+    text-align: left;
+    text-decoration: underline;
+    font-weight: 600;
+    color: #e93a97;
+   }
+
+
+   &__search-description {
+    line-height: 1.5;
+    font-weight: 400;
+
+   }
+
+    .page-link {
+        position: relative;
+        display: block;
+        padding: .5rem .75rem;
+        margin-left: -1px;
+        line-height: 1.25;
+        color: $black;
+        background-color: $grey;
+        border: 1px solid #dee2e6;
+        margin: 2em 0;
+    }
+
+    .active {
+        background-color: #442e8b; 
+        color: #ffffff;   
+    }
+
+}

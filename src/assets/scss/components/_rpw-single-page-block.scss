@@ -1,0 +1,105 @@
+.rpw-single-page-block {
+    min-height: 75vh;
+    padding: 2em;
+    margin: 2em 0 7em;
+
+    &__wrapper {
+       padding: 1em 0 0;
+    }
+    
+    &__main-title {
+        color: $black;
+        font-size: 1.75em;
+        text-align: center;
+        margin-bottom: 1em; 
+        font-weight: 600;
+
+        @include sm {
+        text-align: left;
+        } 
+
+    }
+
+    &__post-meta-title {
+        color: $color-primary-dark;
+        font-size: 1em;
+        text-align: left;
+        margin: 0 0 1em;
+        font-weight: 700;
+        letter-spacing: 0.1px;
+    }
+
+    &__post-content {
+        font-weight: normal;
+        line-height: 1.5;   
+    }
+    
+    &__event-information {
+        color: $black;
+        font-size: 1em;
+        text-align: left;
+        letter-spacing: .2px;
+        margin: 12px 0 23px;
+        font-weight: normal;
+        word-spacing: 2px;
+
+        span {
+            color: $color-primary-dark;   
+        }
+    }
+
+
+    &__post-link {
+        list-style-type: none;
+        margin: 1em 0;
+        text-align: left;
+        text-decoration: underline;
+        font-weight: 600;
+        color: $color-primary-light;
+    
+    }
+
+    &__post-link::after {
+        height: 1px;
+        display: block;
+        width: 100%;
+        background: $black;
+        opacity: .5;
+        border-right: 1px white;
+        content: '';
+        margin: 2em 0 1em;
+    }
+
+
+    button {
+        margin: 1.5em 0 1em;
+    }
+
+
+    &__related-rpw-title {
+        color: $black;
+        font-size: 1.25em;
+        text-align: left;
+        margin: 0 0 2em;
+        font-weight: 600;
+        letter-spacing: 0.1px;
+    }
+
+
+    &__related-rpw-name {
+        color: $black;
+        font-size: 1em;
+        text-align: left;
+        margin: 0 0 0.5em;
+        font-weight: 200;
+        letter-spacing: 0.1px;
+    }
+
+    &__related-rpw-description {
+        font-weight: normal;
+        color: $color-primary-dark; 
+        margin-bottom: 2em;    
+    }
+    
+
+}

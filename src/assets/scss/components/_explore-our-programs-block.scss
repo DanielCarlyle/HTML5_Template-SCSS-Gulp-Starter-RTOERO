@@ -1,0 +1,116 @@
+
+ a.box-fill-link {
+    display: block;
+    height: auto;
+    width: auto;
+    text-decoration: none;
+    cursor: pointer;
+
+    &:hover div > p > a {
+        text-decoration: none; 
+        }
+
+  }
+
+
+.our-programs { 
+    &__main-heading {
+     color: $black;
+     font-size: 2em;
+     font-weight: 600;
+     margin: 0em 0 1.25em;
+     text-align: center;
+ 
+     @include sm {
+    text-align: left;
+ } 
+
+ }
+
+ .program-block {
+     background: $grey;
+     border-radius: 18px;
+     min-height: 12em;
+     margin-bottom: 25px;
+     padding: 20px 37px;
+     height: 17em;
+     overflow: hidden;
+     text-align: left;
+     position: relative;
+
+     div > h5 > a  {
+         color: $black;
+     }
+
+     div > p > a  {
+        color: $grey;
+    }
+
+     &:hover {
+     background: $color-primary-dark;
+     //transform: scale(1.1); 
+     }
+
+     &:hover div > h5 > a {
+        color: $white;
+        font-weight: 800;
+        font-size: 1.5em;
+        text-decoration: none;     
+        }
+
+        &:hover div > p > a {
+            color: $white;
+            text-decoration: none; 
+            }
+
+
+     &__heading {
+    color:$black;
+    margin-top: 10px;
+    font-weight: 600;
+    font-size: 1.5em;
+    margin-bottom: 28px;
+    position: relative;
+    max-width: 80%;
+
+    &:hover {
+        color: $white;
+        font-weight: 800;
+        font-size: 1.5em;
+        text-decoration: none;     
+        }
+    }
+
+
+     &__copy {
+        color:$grey;
+        font-weight: 200;
+        font-size: .95em;
+        /* padding-bottom: 25px; */
+        max-width: 20em;
+        line-height: 1.4;
+        margin-top: 1em;
+        max-width: 80%;
+      }
+
+
+    
+      &__link:after {
+        color: $grey;
+        content: "";
+        height: 25px;
+        width: 25px;
+        position: absolute;
+        right: 50px;
+        top: 50%;
+        transform: translate(-50%, -50%);
+     }
+
+    &__link:hover:after {
+        color:$white;
+        content: ">";
+    }  
+
+}
+
+}

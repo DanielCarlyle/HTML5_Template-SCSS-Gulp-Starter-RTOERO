@@ -1,0 +1,51 @@
+.sidebar-categories-block {
+    margin: 0;
+    width: auto;
+    background: #efeeee;
+    color: $black;
+    padding: 4em 3em;
+    box-shadow: 0 0 30px 0 rgba(0,0,0,.1);
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 0;
+
+    @include sm {
+        margin-left: 2em;
+        min-height: 224px;
+        width: 19em;
+        padding: 2em 1em;
+        } 
+
+       h2 {
+        font-size: 1.25em;
+        color: $black;
+        font-weight: 600;
+        margin-left: -4em;
+       }
+
+        ul li {
+            list-style-type: none;
+            margin: 1em 0;
+            text-align: left;
+            text-decoration: underline;
+            font-weight: 600;
+    
+            a {
+                color: $color-primary-light;
+
+           &:hover {
+               color: darken($color-primary-light, 40%);
+           }  
+                
+            }
+    
+        }
+        
+        
+        
+   
+
+}

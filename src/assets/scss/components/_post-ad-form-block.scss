@@ -1,0 +1,59 @@
+.post-ad-category-block {
+    /* background: #efeeee; */
+    /* min-height: 10em; */
+    padding: 1em 0;
+
+    .search-links a {
+        color: #e93a97;
+        font-weight: 800;
+        text-decoration: underline;
+    }
+
+
+}
+
+
+
+.post-ad-form-block {
+     background: $white; 
+
+    &__main-heading {
+     color:$black;
+     font-size: 2em;
+     font-weight: 600;
+     margin: 0 0 10px;
+     text-align: center;
+
+     @include sm {
+    text-align: left;
+    } 
+ }
+
+
+
+ &__form{
+    background-color: #efeeee;
+    padding: 3rem 3.25rem;
+    box-shadow: 1px 3px 3px #cdbcbc;
+    margin: 2em 0 5em;
+
+    .form-control, #End-Date {
+        display: block;
+        width: 100%;
+        padding: .35rem .95rem;
+        font-size: 1rem;
+        line-height: 1.5;
+        color: #495057;
+        background-color: #fff;
+        background-image: none;
+        background-clip: padding-box;
+        border-radius: 0;
+        margin-bottom: 25px;
+        transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    }
+
+
+}
+
+ 
+ }

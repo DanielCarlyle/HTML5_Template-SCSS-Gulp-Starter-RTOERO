@@ -1,0 +1,79 @@
+.subscribe {
+    background: #442E8B;
+    padding: 2em 0;
+
+    .form-control {
+        background-color: #ffffff;
+        border: none;
+        font-size: 14px;
+        border: solid 1px #E12490;
+        border-radius: 2px;
+    }
+
+
+   h2 {
+    @include headline ($heading-color, $heading-size);
+    color: $tertiary-color;
+   }
+
+   p {
+       color: #ffffff;
+       margin-bottom: 1em;
+   }
+
+button, input, optgroup, select, textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: medium;
+    line-height: inherit;
+}
+
+
+.agree-terms-text {
+    color: #ffffff;
+    font-size: 14px;
+}
+
+}
+
+
+.foundation-subscribe {
+    background: $color-burgundy;
+    padding: 3em 0;
+
+    .form-control {
+        background-color: #ffffff;
+        border: none;
+        font-size: 14px;
+        border: solid 1px #E12490;
+        border-radius: 2px;
+    }
+
+
+   h2 {
+    @include headline ($heading-color, $heading-size);
+    color: $tertiary-color;
+   }
+
+   p {
+       color: #ffffff;
+       margin-bottom: 1em;
+   }
+
+button, input, optgroup, select, textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: medium;
+    line-height: inherit;
+}
+
+
+.agree-terms-text {
+    color: #ffffff;
+    font-size: 14px;
+}
+
+
+
+
+}

@@ -1,0 +1,31 @@
+
+    .help-block {
+        background: url(../../assets/img/contact-block-background-trimmed.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: -ms-flexbox;
+        display: flex;
+        min-height: 33vh;
+        -ms-flex-pack: center;
+        justify-content: center;
+        align-items: center;
+
+        &__box1 {
+            color: #fff;
+        h2 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        } 
+
+        }
+
+        &__box2 {
+            color: $white;
+
+            p {
+                color: #fff;
+                font-size: 1.25em;
+            }         
+        }
+
+    }

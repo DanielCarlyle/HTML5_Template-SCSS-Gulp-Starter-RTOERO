@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1440px" height="872px" viewBox="0 0 1440 872" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 62 (91390) - https://sketch.com -->
+    <title>Group 4</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="1440" height="872"></rect>
+        <polygon id="path-3" points="0.0518625 0.285025554 1383 0.285025554 1383 1013.70634 0.0518625 1013.70634"></polygon>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Foundation--–-H&amp;W" transform="translate(0.000000, -3484.000000)">
+            <g id="Twitter" transform="translate(0.000000, 3484.000000)">
+                <g id="FB-feed">
+                    <g id="Resources---Banner">
+                        <g id="Group-4">
+                            <g id="Our-Team---Banner">
+                                <mask id="mask-2" fill="white">
+                                    <use xlink:href="#path-1"></use>
+                                </mask>
+                                <use id="Mask" fill="#861054" xlink:href="#path-1"></use>
+                                <g id="RTO-Shape" mask="url(#mask-2)">
+                                    <g transform="translate(768.000000, 87.000000)" id="Group-5">
+                                        <g>
+                                            <mask id="mask-4" fill="white">
+                                                <use xlink:href="#path-3"></use>
+                                            </mask>
+                                            <g id="Clip-2"></g>
+                                            <path d="M184.399712,0.285025554 C184.399712,160.541939 314.412949,290.456586 474.793408,290.456586 L659.19312,290.456586 C659.19312,130.199673 529.179883,0.285025554 368.800288,0.285025554 L184.399712,0.285025554" id="Fill-1" fill="#8FCEA5" mask="url(#mask-4)"></path>
+                                            <path d="M737.599712,658.973898 L737.599712,1013.70634 L290.393696,1013.70634 C130.013237,1013.70634 0,883.795145 0,723.538232 L0,658.973898 C0,498.714394 130.013237,368.803201 290.393696,368.803201 L447.20688,368.803201 C602.576558,368.803201 729.447791,490.725041 737.22198,644.04806 C737.22198,644.04806 737.209879,644.886726 737.599712,645.191617 C737.933361,645.452458 737.599712,645.191617 737.599712,645.191617 L737.599712,658.973898" id="Fill-4" fill="#DC1F8A" mask="url(#mask-4)"></path>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

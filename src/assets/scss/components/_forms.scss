@@ -1,0 +1,20 @@
+.form-control {
+  background-color: #f6f7fb;
+  border: none;
+  font-size: 14px;
+  &:focus {
+    background-color: #f6f7fb;
+    border: 1px solid #ced4da;  
+    box-shadow: none;
+    border: none;
+  }
+}
+
+
+
+input[type=email].input-active, input[type=email]:focus, input[type=text].input-active, input[type=tel].input-active, input[type=text]:focus, textarea.input-active, textarea:focus, input[type=password].input-active, input[type=password]:focus, input[type=number].input-active, input[type=number]:focus {
+  background-position: 0 0;
+  box-shadow: none;
+  outline: 0;
+  border: 3px solid #092f55;
+}

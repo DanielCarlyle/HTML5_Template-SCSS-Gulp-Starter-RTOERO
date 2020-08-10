@@ -1,0 +1,48 @@
+
+.workshop-search-block {
+    background: $grey;
+    min-height: 10em;
+    padding: 3em 0;
+
+     .form-control {
+         background: #fff 0 0 no-repeat padding-box;
+         border: 1px solid darken($grey, 30%);
+         /* border-radius: 12px; */
+         opacity: 1;
+         width: auto;
+         min-width: 243px;
+         border-radius: 25px;
+
+         @include lg {
+         width: 400px;
+            } 
+
+ }
+
+
+ button {
+    position: relative;
+    z-index: 1;
+    left: -38px;
+    top: 1px;
+    background-color: transparent;
+    cursor: pointer;
+    width: none;
+    border: none;
+}
+
+#filtersubmit-rpw {
+    position: relative;
+    z-index: 1;
+    left: -6px;
+    top: -1px;
+    color: #442e8b;
+    cursor: pointer;
+    width: 0;
+}
+
+
+
+
+
+}

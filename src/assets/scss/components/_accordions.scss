@@ -1,0 +1,109 @@
+$purple: purple;
+$grey: #efeeee;
+
+  
+  .accordion {
+    /* width: 90%; */
+    /* max-width: 1000px; */
+    margin: 2rem auto;
+    width: 90%;
+
+    @include sm {
+      text-align: left;
+      width: 100%;
+    } 
+
+    ul > li  {
+      margin-left: 15px;
+      line-height: 1.6;
+    }   
+    h6 {
+        //text-align: center;
+        margin: 0;
+        font-size: 1rem;
+        font-weight: 400;
+
+        @include sm {
+          font-size: 1.25rem;
+          //margin: 1rem 0;
+          margin: .5rem 0;
+        } 
+
+      }
+}
+  .accordion-item {
+    background-color: $grey;
+    color: #000;
+    margin: 1rem 0;
+    border-radius: 25px 25px 25px 1px;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.25);
+    border: none;
+     outline: 1px solid transparent;
+  -webkit-backface-visibility: hidden;
+    
+     
+  }
+  
+  .accordion-item-header.active {
+     border: solid 3px $color-purple;
+     border-radius: 25px 25px 25px 1px;
+           background: $color-purple;
+        border-radius: 25px 25px 25px 1px;
+        color: #fff;   
+  
+     -webkit-backface-visibility: hidden;
+  }
+  
+  .accordion-item-header {
+    padding: 0.5rem 3rem 0.5rem 1rem;
+    min-height: 3.5rem;
+    line-height: 1.25rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+     
+            &:hover {
+        background: darken($purple, 10%);
+        border-radius: 25px 25px 25px 1px;
+        color: #fff;       
+      }
+    
+  }
+  .accordion-item-header::after {
+    content: "\002B";
+    font-size: 30px;
+    position: absolute;
+    border: 6px solid $color-primary-dark;
+    color: #fff;
+    background: $color-primary-dark;
+    border-radius: 50%;
+    right: 1rem;
+    padding: 1px;
+    font-weight: 200;
+  }
+  
+  
+  .accordion-item-header.active::after {
+    content: "\2212";
+    padding-top: 0px;
+    font-size: 25px;
+  
+  }
+  .accordion-item-body {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+  .accordion-item-body-content {
+    padding: 1rem;
+    line-height: 1.5rem;
+    //border-top: 1px solid;
+    //border-image: linear-gradient(to right, transparent, #34495e, transparent) 1;
+  }
+  
+  .accordion-item-body-content.active {
+        border: solid 3px $purple;
+     //border-radius: 25px 25px 25px 1px;
+  }
