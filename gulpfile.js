@@ -61,7 +61,7 @@ function compileHTML() {
       root: 'src/pages/',
       layouts: 'src/layouts/',
       // pageLayouts: {
-           // All pages inside src/pages/blog will use the blog.html layout
+      // All pages inside src/pages/blog will use the blog.html layout
       //     'blog': 'blog'
       // }
       partials: 'src/partials/',
@@ -127,7 +127,7 @@ function jsLint() {
 // WATCH FILES
 function watchFiles() {
   watch('src/**/*.html', compileHTML);
-  watch(['src/assets/scss/**/*.scss', 'src/assets/scss/*.scss'] , compileSCSS);
+  watch(['src/assets/scss/**/*.scss', 'src/assets/scss/*.scss'], compileSCSS);
   watch('src/assets/js/*.js', compileJS);
   watch('src/assets/img/**/*', copyImages);
 }
@@ -146,7 +146,7 @@ function browserSyncInit(done) {
 function deploy() {
   return src('/*')
     .pipe(ghPages({
-      remoteUrl: 'https://github.com/johndavemanuel/bootstrap4-gulp-starter-template.git',
+      remoteUrl: 'https://github.com/DanielCarlyle/rtoero-latest-project.git',
       branch: 'master',
       message: 'Automated push of contents via gulp'
     }));
@@ -168,8 +168,8 @@ function copyImages() {
 function copyFont() {
   log(chalk.red.bold('---------------COPYING FONTS INTO DIST FOLDER---------------'));
   return src([
-      'src/assets/font/*',
-    ])
+    'src/assets/font/*',
+  ])
     .pipe(dest('dist/assets/fonts'))
     .pipe(browserSync.stream());
 }
@@ -178,8 +178,8 @@ function copyFont() {
 function jsVendor() {
   log(chalk.red.bold('---------------COPY JAVASCRIPT VENDOR FILES INTO DIST---------------'));
   return src([
-      'src/assets/vendor/js/*',
-    ])
+    'src/assets/vendor/js/*',
+  ])
     .pipe(dest('dist/assets/vendor/js'))
     .pipe(browserSync.stream());
 }
@@ -188,8 +188,8 @@ function jsVendor() {
 function cssVendor() {
   log(chalk.red.bold('---------------COPY CSS VENDOR FILES INTO DIST---------------'));
   return src([
-      'src/assets/vendor/css/*',
-    ])
+    'src/assets/vendor/css/*',
+  ])
     .pipe(dest('dist/assets/vendor/css'))
     .pipe(browserSync.stream());
 }
@@ -217,8 +217,8 @@ function cleanDist(done) {
 function generateDocs() {
   log(chalk.red.bold('---------------CREATING DOCS---------------'));
   return src([
-      'dist/**/*',
-    ])
+    'dist/**/*',
+  ])
     .pipe(dest('docs'))
     .pipe(browserSync.stream());
 }
@@ -256,13 +256,13 @@ function renameSources() {
 function concatScripts() {
   log(chalk.red.bold('---------------CONCATINATE SCRIPTS---------------'));
   return src([
-      'src/assets/vendor/js/jquery.js',
-      'src/assets/vendor/js/popper.js',
-      'src/assets/vendor/js/bootstrap.js',
-      'src/assets/js/util/autoPadding.js',
-      'src/assets/js/util/crossPlatform.js',
-      'src/assets/js/*'
-    ])
+    'src/assets/vendor/js/jquery.js',
+    'src/assets/vendor/js/popper.js',
+    'src/assets/vendor/js/bootstrap.js',
+    'src/assets/js/util/autoPadding.js',
+    'src/assets/js/util/crossPlatform.js',
+    'src/assets/js/*'
+  ])
     .pipe(sourcemaps.init())
     .pipe(concat('main.js'))
     .pipe(sourcemaps.write('./'))
@@ -287,9 +287,9 @@ function minifyScripts() {
 function minifyCss() {
   log(chalk.red.bold('---------------MINIFY CSS---------------'));
   return src([
-      'src/assets/vendor/css/**/*',
-      'dist/assets/css/main.css'
-    ])
+    'src/assets/vendor/css/**/*',
+    'dist/assets/css/main.css'
+  ])
     .pipe(sourcemaps.init())
     .pipe(concat('main.css'))
     .pipe(sourcemaps.write('./'))
