@@ -88,3 +88,6 @@ To use this template, your computer needs:
 - [Handlebars](http://handlebarsjs.com/)
 - [Panini](https://github.com/zurb/panini) 
 - [Gulp](https://gulpjs.org/getting-started)
+
+
+![screencapture-rtoero-ca-2021-02-05-12_00_51](https://user-images.githubusercontent.com/9203795/107064744-e429a300-67a9-11eb-8bbb-8ad96551fab3.png)
